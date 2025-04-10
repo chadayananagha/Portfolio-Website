@@ -1,5 +1,12 @@
 import React from "react";
 
+// Import images from the correct path
+import xShareScreenshot from "../assets/screenshot/x-share-screenshot.png";
+import pokeFightScreenshot from "../assets/screenshot/pokefight-screenshot.png";
+import wanderLoveScreenshot from "../assets/screenshot/wanderlove-screenshot.png";
+import crossoverScreenshot from "../assets/screenshot/crossover-psdhtml-screenshot.png";
+import cookbookScreenshot from "../assets/screenshot/cookbook-screenshot.png";
+
 const projects = [
   {
     title: "x-share",
@@ -14,6 +21,7 @@ const projects = [
       "Responsive Design",
     ],
     liveDemo: "https://x-share.netlify.app/",
+    screenshot: xShareScreenshot, // Using imported image
   },
   {
     title: "PokeFight",
@@ -28,6 +36,7 @@ const projects = [
       "Responsive Design",
     ],
     liveDemo: "https://wbspokemonfight.netlify.app/",
+    screenshot: pokeFightScreenshot, // Using imported image
   },
   {
     title: "Wander Love",
@@ -40,6 +49,7 @@ const projects = [
       "Responsive Design",
     ],
     liveDemo: "https://wanderlov.netlify.app/",
+    screenshot: wanderLoveScreenshot, // Using imported image
   },
   {
     title: "Crossover PSD to HTML",
@@ -47,6 +57,7 @@ const projects = [
       "A project where a PSD design is converted into a responsive and fully functional HTML website.",
     techStack: ["React", "Tailwind CSS", "Responsive Design"],
     liveDemo: "https://crossover-psdhtml.netlify.app/",
+    screenshot: crossoverScreenshot, // Using imported image
   },
   {
     title: "CookBook",
@@ -54,6 +65,7 @@ const projects = [
       "A recipe app where users can browse and search for their favorite recipes. Built using HTML for the structure and a bit of JavaScript for interactivity, styled with Tailwind CSS. This project does not include a backend and is purely front-end.",
     techStack: ["Tailwind CSS", "HTML", "JavaScript", "Responsive Design"],
     liveDemo: "https://chadayananagha.github.io/CookBook/",
+    screenshot: cookbookScreenshot, // Using imported image
   },
 ];
 
@@ -69,13 +81,22 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="card bg-white shadow-xl hover:shadow-2xl transform transition-all hover:scale-105 hover:rotate-2 hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:text-white p-6 rounded-lg"
+              className="card bg-white shadow-xl transform transition-all hover:scale-105 hover:rotate-2 hover:shadow-2xl hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:text-white p-6 rounded-lg"
             >
               <div className="card-body">
-                <h3 className="card-title text-2xl font-semibold text-gray-800 mb-4 transition-all duration-300 ease-in-out transform hover:scale-110 hover:text-white">
+                {/* Screenshot Image */}
+                <div className="mb-4">
+                  <img
+                    src={project.screenshot} // Use the imported screenshot variable
+                    alt={project.title}
+                    className="w-full h-64 object-cover rounded-lg transition-transform transform hover:scale-105"
+                  />
+                </div>
+
+                <h3 className="card-title text-2xl font-semibold text-gray-800 mb-4 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-3 hover:text-white">
                   {project.title}
                 </h3>
-                <p className="text-lg text-gray-600 mb-4 transition-all duration-300 ease-in-out hover:text-gray-300">
+                <p className="text-lg text-gray-600 mb-4 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:rotate-2 hover:text-gray-300">
                   {project.description}
                 </p>
 
@@ -84,7 +105,7 @@ const Projects = () => {
                   {project.techStack.map((tech, index) => (
                     <span
                       key={index}
-                      className="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full transition-colors hover:bg-blue-500 hover:text-white"
+                      className="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full transition-colors hover:bg-blue-500 hover:text-white transform hover:scale-105"
                     >
                       {tech}
                     </span>
@@ -96,7 +117,7 @@ const Projects = () => {
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline btn-secondary text-blue-500 hover:text-blue-400 transition-transform transform hover:scale-110 px-6 py-2 rounded-lg"
+                    className="btn btn-outline btn-secondary text-blue-500 hover:text-blue-400 transition-transform transform hover:scale-110 hover:rotate-3 px-6 py-2 rounded-lg"
                   >
                     Live Demo
                   </a>

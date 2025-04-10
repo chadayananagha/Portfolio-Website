@@ -7,16 +7,16 @@ const About = () => {
         {/* Intro Section */}
         <div className="flex flex-col items-center justify-center px-4">
           <div className="w-full text-center lg:text-left">
-            <h2 className="text-4xl font-semibold text-white mb-4 text-center">
+            <h2 className="text-4xl font-semibold text-white mb-4 text-center transform transition-all duration-500 hover:scale-110 hover:rotate-3 hover:text-yellow-400">
               Hi, I'm Anagha
             </h2>
-            <p className="text-lg text-gray-200 mb-4">
+            <p className="text-lg text-gray-200 mb-4 transform transition-all duration-500 hover:scale-105">
               I completed my Master of Engineering in Computer Science and
               Engineering and later attended an intensive Full Stack Web and App
               Development bootcamp, where I gained hands-on experience in
               building modern web applications.
             </p>
-            <p className="text-lg text-gray-200 mb-4">
+            <p className="text-lg text-gray-200 mb-4 transform transition-all duration-500 hover:scale-105">
               I'm now looking to bring my skills to a team and continue growing
               while working on exciting projects. I'm passionate about creating
               smooth, user-friendly experiences and constantly learning new
@@ -27,64 +27,64 @@ const About = () => {
 
         {/* Skills Section */}
         <div className="text-center mb-16">
-          <h3 className="text-3xl font-semibold text-white mb-8">
+          <h3 className="text-3xl font-semibold text-white mb-8 transform transition-all duration-500 hover:scale-110 hover:rotate-3">
             Skills & Technologies
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             {/* Skill Icons */}
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-orange-500">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-orange-500 hover:rotate-6 hover:shadow-xl">
               <i className="fab fa-html5 fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">HTML</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-blue-500">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-blue-500 hover:rotate-6 hover:shadow-xl">
               <i className="fab fa-css3-alt fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">CSS</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-yellow-500">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-yellow-500 hover:rotate-6 hover:shadow-xl">
               <i className="fab fa-js fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">JavaScript</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-blue-400">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-blue-400 hover:rotate-6 hover:shadow-xl">
               <i className="fab fa-react fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">React.js</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-green-500">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-green-500 hover:rotate-6 hover:shadow-xl">
               <i className="fab fa-node fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">Node.js</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-purple-600">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-purple-600 hover:rotate-6 hover:shadow-xl">
               <i className="fas fa-database fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">MongoDB</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-blue-600">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-blue-600 hover:rotate-6 hover:shadow-xl">
               <i className="fas fa-database fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">MySQL</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-indigo-500">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-indigo-500 hover:rotate-6 hover:shadow-xl">
               <i className="fas fa-database fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">PostgreSQL</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-green-700">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-green-700 hover:rotate-6 hover:shadow-xl">
               <i className="fas fa-plug fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">RESTful API</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-black">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-black hover:rotate-6 hover:shadow-xl">
               <i className="fab fa-node fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">Express.js</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-pink-600">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-pink-600 hover:rotate-6 hover:shadow-xl">
               <i className="fab fa-php fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">PHP (basics)</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-teal-500">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-teal-500 hover:rotate-6 hover:shadow-xl">
               <i className="fas fa-cloud fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">Project Deployment</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-pink-500">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-pink-500 hover:rotate-6 hover:shadow-xl">
               <i className="fab fa-bootstrap fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">React Bootstrap</p>
             </div>
-            <div className="flex flex-col items-center transition-transform transform hover:scale-110 hover:text-teal-600">
+            <div className="flex flex-col items-center transition-transform transform hover:scale-125 hover:text-teal-600 hover:rotate-6 hover:shadow-xl">
               <i className="fas fa-cogs fa-4x mb-4"></i>
               <p className="text-lg text-gray-200">Tailwind CSS</p>
             </div>
@@ -93,7 +93,7 @@ const About = () => {
 
         {/* Projects Section */}
         <div className="text-center">
-          <h3 className="text-3xl font-semibold text-white mb-8">
+          <h3 className="text-3xl font-semibold text-white mb-8 transform transition-all duration-500 hover:scale-110 hover:rotate-3">
             My Projects
           </h3>
           <p className="text-lg text-gray-200 mb-8">
@@ -103,13 +103,13 @@ const About = () => {
           <div className="space-x-4">
             <a
               href="#x-share"
-              className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:rotate-3"
             >
               x-share
             </a>
             <a
               href="#wbs-pokemon"
-              className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:rotate-3"
             >
               PokeFight
             </a>
@@ -117,7 +117,7 @@ const About = () => {
               href="https://wanderlov.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:rotate-3"
             >
               Wanderlov
             </a>
@@ -125,7 +125,7 @@ const About = () => {
               href="https://crossover-psdhtml.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:rotate-3"
             >
               Crossover PSD to HTML
             </a>
@@ -133,7 +133,7 @@ const About = () => {
               href="https://chadayananagha.github.io/CookBook/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:rotate-3"
             >
               CookBook
             </a>

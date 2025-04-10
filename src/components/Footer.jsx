@@ -16,7 +16,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="text-gray-800 hover:text-primary transition-colors duration-300"
+            className="text-gray-800 hover:text-primary transition-colors duration-300 transform hover:scale-110 hover:rotate-3"
           >
             <i className="fab fa-github fa-2x"></i>
           </a>
@@ -25,14 +25,14 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="text-gray-800 hover:text-primary transition-colors duration-300"
+            className="text-gray-800 hover:text-primary transition-colors duration-300 transform hover:scale-110 hover:rotate-3"
           >
             <i className="fab fa-linkedin fa-2x"></i>
           </a>
           <a
             href="mailto:anagha.chadayan@gmail.com"
             aria-label="Email"
-            className="text-gray-800 hover:text-primary transition-colors duration-300"
+            className="text-gray-800 hover:text-primary transition-colors duration-300 transform hover:scale-110 hover:rotate-3"
           >
             <i className="fas fa-envelope fa-2x"></i>
           </a>

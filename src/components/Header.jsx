@@ -10,18 +10,18 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-6 shadow-lg transition-all duration-300">
+    <header className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-6 shadow-xl transition-all duration-500">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6">
         {/* Logo Section */}
         <div className="flex items-center space-x-4 relative group">
           <img
             src={profilePic}
             alt="Anagha Chadayan"
-            className="w-16 h-16 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl"
+            className="w-16 h-16 rounded-full object-cover transform transition-transform duration-500 hover:scale-125 hover:rotate-6 hover:shadow-2xl"
           />
           <Link
             to="/"
-            className="text-3xl font-extrabold hover:text-gray-200 transform transition-colors duration-300"
+            className="text-3xl font-extrabold text-white transform transition-transform duration-500 hover:scale-110 hover:rotate-3 hover:text-yellow-300"
           >
             Anagha Chadayan
           </Link>
@@ -33,7 +33,7 @@ const Header = () => {
             <li>
               <Link
                 to="/about"
-                className="text-lg font-medium hover:text-gray-200 transition-colors duration-300"
+                className="text-lg font-medium hover:text-gray-200 transition-colors duration-300 transform hover:scale-110 hover:shadow-lg"
               >
                 About
               </Link>
@@ -41,7 +41,7 @@ const Header = () => {
             <li>
               <Link
                 to="/projects"
-                className="text-lg font-medium hover:text-gray-200 transition-colors duration-300"
+                className="text-lg font-medium hover:text-gray-200 transition-colors duration-300 transform hover:scale-110 hover:shadow-lg"
               >
                 Projects
               </Link>
@@ -54,14 +54,14 @@ const Header = () => {
           <a
             href="/Resume/Anagha_Chadayan_Resume - English.pdf" // Correct English resume path
             download="Anagha_Chadayan_Resume - English.pdf" // This will trigger download with this filename
-            className="bg-yellow-500 text-white py-2 px-6 rounded-full text-lg font-medium hover:bg-yellow-400 transition-all duration-300 transform hover:scale-110"
+            className="bg-yellow-500 text-white py-2 px-6 rounded-full text-lg font-medium hover:bg-yellow-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
           >
             Resume (English)
           </a>
           <a
             href="/Resume/Anagha_Chadayan_Lebenslauf.pdf" // Correct German resume path
             download="Anagha_Chadayan_Lebenslauf.pdf" // This will trigger download with this filename
-            className="bg-yellow-500 text-white py-2 px-6 rounded-full text-lg font-medium hover:bg-yellow-400 transition-all duration-300 transform hover:scale-110"
+            className="bg-yellow-500 text-white py-2 px-6 rounded-full text-lg font-medium hover:bg-yellow-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
           >
             Lebenslauf (Deutsch)
           </a>
@@ -73,7 +73,7 @@ const Header = () => {
           className="md:hidden text-3xl focus:outline-none"
         >
           <span
-            className={`block w-8 h-1 bg-white mb-2 transition-all duration-300 ${
+            className={`block w-8 h-1 bg-white mb-2 transition-all duration-300 transform ${
               isMenuOpen ? "rotate-45 translate-y-2" : ""
             }`}
           ></span>
@@ -83,7 +83,7 @@ const Header = () => {
             }`}
           ></span>
           <span
-            className={`block w-8 h-1 bg-white mb-2 transition-all duration-300 ${
+            className={`block w-8 h-1 bg-white mb-2 transition-all duration-300 transform ${
               isMenuOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           ></span>
@@ -94,13 +94,13 @@ const Header = () => {
       <div
         className={`md:hidden ${
           isMenuOpen ? "block" : "hidden"
-        } bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-4 transition-all duration-300`}
+        } bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-4 transition-all duration-300 transform scale-110 shadow-2xl`}
       >
         <ul className="space-y-4 text-center">
           <li>
             <Link
               to="/about"
-              className="block text-xl font-medium hover:text-gray-200 transition-colors duration-300"
+              className="block text-xl font-medium hover:text-gray-200 transition-colors duration-300 transform hover:scale-110"
               onClick={toggleMenu} // Close the menu on click
             >
               About
@@ -109,7 +109,7 @@ const Header = () => {
           <li>
             <Link
               to="/projects"
-              className="block text-xl font-medium hover:text-gray-200 transition-colors duration-300"
+              className="block text-xl font-medium hover:text-gray-200 transition-colors duration-300 transform hover:scale-110"
               onClick={toggleMenu} // Close the menu on click
             >
               Projects
@@ -119,7 +119,7 @@ const Header = () => {
             <a
               href="/Resume/Anagha_Chadayan_Resume - English.pdf" // Correct English resume path
               download="Anagha_Chadayan_Resume - English.pdf" // Triggers download
-              className="block text-xl font-medium hover:text-gray-200 transition-colors duration-300"
+              className="block text-xl font-medium hover:text-gray-200 transition-colors duration-300 transform hover:scale-110"
               onClick={toggleMenu} // Close the menu on click
             >
               Resume (English)
@@ -129,7 +129,7 @@ const Header = () => {
             <a
               href="/Resume/Anagha_Chadayan_Lebenslauf.pdf" // Correct German resume path
               download="Anagha_Chadayan_Lebenslauf.pdf" // Triggers download
-              className="block text-xl font-medium hover:text-gray-200 transition-colors duration-300"
+              className="block text-xl font-medium hover:text-gray-200 transition-colors duration-300 transform hover:scale-110"
               onClick={toggleMenu} // Close the menu on click
             >
               Lebenslauf (Deutsch)
