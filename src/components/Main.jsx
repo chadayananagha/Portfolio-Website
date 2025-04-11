@@ -5,6 +5,7 @@ import jsLogo from "../assets/tech/js.svg";
 import reactLogo from "../assets/tech/react.svg";
 import tailwindLogo from "../assets/tech/tailwind.png";
 import githubLogo from "../assets/tech/github.svg";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -27,12 +28,12 @@ const Main = () => {
 
       {/* Action Button */}
       <div className="mt-8">
-        <a
-          href="/projects"
+        <Link
+          to="/projects"
           className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:rotate-6"
         >
           View My Work
-        </a>
+        </Link>
       </div>
 
       {/* Tech Logos */}
