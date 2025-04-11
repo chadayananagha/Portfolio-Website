@@ -71,12 +71,14 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-400 to-purple-600 pt-12 pb-24 flex flex-col items-center">
+    <div className="bg-gradient-to-r from-blue-400 to-purple-600 min-h-screen flex flex-col items-center py-12 transition-all duration-300">
       <div className="max-w-6xl w-full px-4">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
+        {/* Main heading */}
+        <h2 className="text-4xl font-bold text-white mb-12 text-center transition-all duration-500 transform hover:scale-110 hover:text-yellow-400">
           My Projects
         </h2>
 
+        {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
           {projects.map((project, index) => (
             <div
@@ -93,13 +95,17 @@ const Projects = () => {
                   />
                 </div>
 
+                {/* Project Title */}
                 <h3 className="card-title text-2xl font-semibold text-gray-800 mb-4 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-3 hover:text-white">
                   {project.title}
                 </h3>
+
+                {/* Project Description */}
                 <p className="text-lg text-gray-600 mb-4 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:rotate-2 hover:text-gray-300">
                   {project.description}
                 </p>
 
+                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   <strong className="text-gray-800">Tech Stack:</strong>
                   {project.techStack.map((tech, index) => (
@@ -112,6 +118,7 @@ const Projects = () => {
                   ))}
                 </div>
 
+                {/* Live Demo Button */}
                 <div className="card-actions flex justify-center items-center">
                   <a
                     href={project.liveDemo}

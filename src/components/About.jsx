@@ -1,4 +1,7 @@
 import React from "react";
+import { Player } from "@lottiefiles/react-lottie-player";
+
+import projectAnimation from "../assets/animations/project-animation.json";
 
 const About = () => {
   return (
@@ -96,10 +99,22 @@ const About = () => {
           <h3 className="text-3xl font-semibold text-white mb-8 transform transition-all duration-500 hover:scale-110 hover:rotate-3">
             My Projects
           </h3>
+
           <p className="text-lg text-gray-200 mb-8">
             Take a look at some of the projects I've worked on. Feel free to
             check them out and see how I approach solving problems with code.
           </p>
+
+          {/* Project Animation */}
+          <div className="mt-6 mb-8">
+            <Player
+              autoplay
+              loop
+              src={projectAnimation} // Animation for project section
+              style={{ height: "200px", width: "200px" }}
+              className="mx-auto mb-6"
+            />
+          </div>
           <div className="space-x-4">
             <a
               href="#x-share"

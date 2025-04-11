@@ -6,10 +6,26 @@ import reactLogo from "../assets/tech/react.svg";
 import tailwindLogo from "../assets/tech/tailwind.png";
 import githubLogo from "../assets/tech/github.svg";
 import { Link } from "react-router-dom";
+import { Player } from "@lottiefiles/react-lottie-player";
+
+// Lottie Animation JSONs (Ensure the correct paths)
+import typingAnimation from "../assets/animations/typing.json"; // Text typing effect
+import rocketAnimation from "../assets/animations/rocket.json"; // Rocket animation
 
 const Main = () => {
   return (
     <div className="bg-gradient-to-r from-indigo-500 to-purple-600 min-h-screen flex flex-col justify-center items-center text-center py-24 transition-all duration-300">
+      {/* Lottie Typing Animation */}
+      <div className="mb-8">
+        <Player
+          autoplay
+          loop
+          src={typingAnimation}
+          style={{ height: "150px", width: "300px" }}
+          className="mx-auto"
+        />
+      </div>
+
       {/* Main heading */}
       <h1 className="text-5xl font-bold text-white mb-4 transition-transform transform hover:scale-110 hover:text-yellow-400">
         Hi, I'm Anagha
@@ -21,7 +37,7 @@ const Main = () => {
       </h3>
 
       {/* Description */}
-      <p className="text-xl text-gray-200 mt-6 max-w-2xl mx-auto px-4 transition-all duration-300 hover:text-gray-100">
+      <p className="text-xl text-gray-200 mt-6 max-w-2xl mx-auto px-4 transition-all duration-500 transform hover:text-gray-100">
         Welcome to my portfolio! I'm passionate about building intuitive and
         user-friendly web applications. Let's build something great together!
       </p>
@@ -34,6 +50,17 @@ const Main = () => {
         >
           View My Work
         </Link>
+      </div>
+
+      {/* Lottie Rocket Animation (moved below the button) */}
+      <div className="mt-6">
+        <Player
+          autoplay
+          loop
+          src={rocketAnimation}
+          style={{ height: "120px", width: "120px" }}
+          className="mx-auto my-6"
+        />
       </div>
 
       {/* Tech Logos */}

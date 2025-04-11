@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-6 shadow-xl transition-all duration-500">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6">
-        {/* Logo Section */}
+        {/* Logo and Name Section */}
         <div className="flex items-center space-x-4 relative group">
           <img
             src={profilePic}
@@ -49,32 +49,32 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* Resume Download Links (English and German) */}
+        {/* Resume Download Links */}
         <div className="hidden md:flex items-center space-x-4">
           <a
-            href="/Resume/Anagha_Chadayan_Resume - English.pdf" // Correct English resume path
-            download="Anagha_Chadayan_Resume - English.pdf" // This will trigger download with this filename
+            href="/Resume/Anagha_Chadayan_Resume - English.pdf"
+            download="Anagha_Chadayan_Resume - English.pdf"
             className="bg-yellow-500 text-white py-2 px-6 rounded-full text-lg font-medium hover:bg-yellow-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
           >
             Resume (English)
           </a>
           <a
-            href="/Resume/Anagha_Chadayan_Lebenslauf.pdf" // Correct German resume path
-            download="Anagha_Chadayan_Lebenslauf.pdf" // This will trigger download with this filename
+            href="/Resume/Anagha_Chadayan_Lebenslauf.pdf"
+            download="Anagha_Chadayan_Lebenslauf.pdf"
             className="bg-yellow-500 text-white py-2 px-6 rounded-full text-lg font-medium hover:bg-yellow-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
           >
             Lebenslauf (Deutsch)
           </a>
         </div>
 
-        {/* Hamburger Menu (Mobile View) */}
+        {/* Hamburger Menu Button (Mobile View) */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-3xl focus:outline-none"
+          className="md:hidden text-3xl focus:outline-none relative z-50"
         >
           <span
             className={`block w-8 h-1 bg-white mb-2 transition-all duration-300 transform ${
-              isMenuOpen ? "rotate-45 translate-y-2" : ""
+              isMenuOpen ? "rotate-45 translate-y-2 bg-gray-300" : "bg-white"
             }`}
           ></span>
           <span
@@ -84,7 +84,7 @@ const Header = () => {
           ></span>
           <span
             className={`block w-8 h-1 bg-white mb-2 transition-all duration-300 transform ${
-              isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+              isMenuOpen ? "-rotate-45 -translate-y-2 bg-gray-300" : "bg-white"
             }`}
           ></span>
         </button>
@@ -117,8 +117,8 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="/Resume/Anagha_Chadayan_Resume - English.pdf" // Correct English resume path
-              download="Anagha_Chadayan_Resume - English.pdf" // Triggers download
+              href="/Resume/Anagha_Chadayan_Resume - English.pdf"
+              download="Anagha_Chadayan_Resume - English.pdf"
               className="block text-xl font-medium hover:text-gray-200 transition-colors duration-300 transform hover:scale-110"
               onClick={toggleMenu} // Close the menu on click
             >
@@ -127,8 +127,8 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="/Resume/Anagha_Chadayan_Lebenslauf.pdf" // Correct German resume path
-              download="Anagha_Chadayan_Lebenslauf.pdf" // Triggers download
+              href="/Resume/Anagha_Chadayan_Lebenslauf.pdf"
+              download="Anagha_Chadayan_Lebenslauf.pdf"
               className="block text-xl font-medium hover:text-gray-200 transition-colors duration-300 transform hover:scale-110"
               onClick={toggleMenu} // Close the menu on click
             >
